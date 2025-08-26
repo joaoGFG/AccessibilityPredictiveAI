@@ -1,4 +1,4 @@
-# Modelo IA Preditivo de Assistência para Pessoas com Deficiência 🦽
+# Modelo IA Preditivo de Assistência para Pessoas com Deficiência 
 
 ## 📋 Descrição do Projeto
 
