@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>IA - Previsão</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Previsão de Assistência</h1>
+  <form id="predict-form" method="POST">
+
+  <label for="idade">Idade</label>
+  <input type="number" name="idade" placeholder="Idade" required />
+
+  <label for="sexo">Sexo</label>
+  <select id="sexo" name="sexo" required>
+    <option value="">Selecione</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+  </select>
+
+  <label for="linha_metro">Linha do metrô</label>
+  <input type="text" name="linha_metro" placeholder="Linha do Metrô (Azul, Verde...)" required />
+
+  <label for="estacao_movimentada">Estação movimentada?</label>
+  <select id="estacao_movimentada" name="estacao_movimentada" required>
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+  </select>
+
+  <label for="usa_bengala">Usa bengala?</label>
+  <select id="usa_bengala" name="usa_bengala" required>
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+  </select>
+
+  <label for="aplicativo_acessibilidade">Usa aplicativo de acessibilidade?</label>
+  <select id="aplicativo_acessibilidade" name="aplicativo_acessibilidade" required>
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+  </select>
+  
+  <label for="horario_pico">Horário de pico?</label>
+  <select id="horario_pico" name="horario_pico" required>
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+  </select>
+
+  <label for="usa_cao_guia">Usa cão-guia?</label>
+  <select id="usa_cao_guia" name="usa_cao_guia" required>
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+  </select>
+
+  <label for="tempo_de_espera">Tempo de espera</label>
+  <input type="number" name="tempo_de_espera" placeholder="Tempo de espera (min)" required />
+  <button type="submit">Prever</button>
+</form>
+
+  <div id="resultado"></div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
