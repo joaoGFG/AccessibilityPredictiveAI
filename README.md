@@ -137,7 +137,6 @@ python app.py
 
 - **Tempo de Resposta**: < 100ms
 - **Disponibilidade**: 99.9%
-- **Precisão do Modelo**: Validação contínua com dados reais
 
 ## 🤝 Contribuições
 
